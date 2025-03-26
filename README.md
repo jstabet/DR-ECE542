@@ -2,7 +2,7 @@
 Diabetic retinopathy detection for ECE542 course project
 
 ## Conda Environment (WIP)
-```conda create -n dr torch torchvision pillow pandas numpy matplotlib scikit-learn```
+```conda create -n dr torch torchvision torchinfo pillow pandas numpy matplotlib scikit-learn```
 
 ## Dataset
 [Download from Kaggle](https://www.kaggle.com/competitions/diabetic-retinopathy-detection/data)
