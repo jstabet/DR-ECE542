@@ -27,8 +27,6 @@ class DRDataset(torch.utils.data.Dataset):
 
         # get subset based on idx
         subset = self.label_df.iloc[idx]
-        img_path = subset['image'] + '.jpeg'
-        img = Image.open(os.path.join(self.images_source, img_path))
         label = subset['level']
         
         # load image if in memory
@@ -37,6 +35,8 @@ class DRDataset(torch.utils.data.Dataset):
 
         # OR preprocess image
         else:
+            img_path = subset['image'] + '.jpeg'
+            img = Image.open(os.path.join(self.images_source, img_path))
             img_preproc = self.preproc(img)
 
         return img_preproc, label
