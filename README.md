@@ -2,7 +2,7 @@
 Diabetic retinopathy detection for ECE542 course project
 
 ## Conda Environment (WIP)
-```conda create -n dr pytorch torchvision torchinfo pillow pandas numpy matplotlib seaborn scikit-learn imbalanced-learn tqdm ipykernel```
+```conda create -n dr pytorch torchvision torchinfo optuna pillow pandas numpy matplotlib seaborn scikit-learn imbalanced-learn tqdm ipykernel ipywidgets```
 
 ## Files
 ```data:```:
@@ -21,6 +21,7 @@ Diabetic retinopathy detection for ECE542 course project
 * EDA.ipynb: EDA
 * preproc.ipynb: preprocess images per resnet and save to memory
 * baseline/resnet_random/resnet.ipynb: train models and save model/metadata to memory
+* resnet_tune.ipynb: tune model using optuna
 * evaluate.ipynb: evaluate model test set
 * utils.py: helpful functions (DRDataset class)
 
