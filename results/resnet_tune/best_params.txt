@@ -1,0 +1,1 @@
+{'undersample': False, 'lr': 0.0002827499994577573, 'dropout1': 0.45488846901588875, 'dropout2': 0.4473711981698735, 'hidden1': 1536, 'hidden2': 640, 'num_fc_layers': 3, 'hidden3': 320, 'weighted_loss': False, 'unfreeze_layer4': True}
