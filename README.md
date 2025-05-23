@@ -12,7 +12,8 @@ Diabetic retinopathy detection for ECE542 course project
 * trainLabels.csv: raw labels from kaggle
 
 ```results:```:
-> each subfolder contains the following: model.pth, metadata.pth (train/val/test data, training metrics, optimizer), test_results.npz (y_true and y_pred on test set), training_curves.png, and confusion_matrix.png
+> each subfolder contains the following: model.pth, metadata.pth (train/val/test data, training metrics, optimizer), test_results.npz (y_true and y_pred on test set), training_curves.png, and confusion_matrix.png  
+> NOTE: deleted metadata.pth files - code was saving the entire dataset each time and should be rewritten to only save train/val/test indices
 * baseline: simple CNN
 * resnet_random: resnet50, random train/val/test split
 * resnet: resnet50, train/val/test stratified by class label
