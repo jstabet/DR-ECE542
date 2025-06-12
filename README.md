@@ -34,6 +34,8 @@ Diabetic retinopathy detection for ECE542 course project
 >unzip train.zip
 >```
 
+To preprocess these images for ResNet50, first run ```preproc.ipynb``` (takes ~30min on lambda)
+
 ### Labels  
 0 - No DR  
 1 - Mild  
